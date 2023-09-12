@@ -1,0 +1,335 @@
+/* Contexto geral da pagina */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    overflow-x: hidden;
+}
+
+.container {
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.container section {
+    border: 1px solid green;
+    margin-bottom: 50px;
+    width: 100vw;
+    /* Define a largura igual à largura da viewport */
+    height: 95vh;
+    /* Define a altura igual à altura da viewport */
+    flex-shrink: 0;
+
+}
+
+/* Definição da fonte dos titulos */
+@font-face {
+    font-family: font-dk;
+    src: url('./fontes/Guardians.ttf') format('truetype');
+}
+
+/*Definições da pagina 1*/
+.page1 {
+    background: url(../res/geral/fundo-titulo.png), lightgray;
+    background-repeat: no-repeat;
+    background-size: 98vw 95vh;
+    background-position: center;
+}
+
+.page1 .titulo h1 {
+    position: absolute;
+    color: #ffffffce;
+    text-shadow: -20px 20px 5px rgba(0, 0, 0, 0.767);
+    font-family: 'font-dk';
+    font-size: 200px;
+    margin-left: 500px;
+    ;
+    z-index: 2;
+}
+
+.page1 .icone {
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    margin-left: 150px;
+    margin-top: 70px;
+
+    background: url(../res/geral/icone.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+
+}
+
+
+/* Definições pagina 2 */
+.page2 {
+    display: flex;
+    overflow: hidden;
+    background-color: rgba(193, 193, 219, 0.432);
+
+}
+
+.page2 .sobre {
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.page2 .sobre h1 {
+    width: 500px;
+    height: 59px;
+    color: #000;
+    text-shadow: -7px 2px 5px rgba(49, 48, 48, 0.411);
+    font-family: Post No Bills Colombo ExtraBold;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.page2 .sobre p {
+    width: 802px;
+    height: 124px;
+    color: #171212;
+    text-shadow: -7px 2px 5px rgba(49, 48, 48, 0.411);
+    font-family: Abel;
+    font-size: 23px;
+    font-weight: 400;
+
+}
+
+.page2 .sobre span {
+    font-family: Abel;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.fundamentos .img-astronauta {
+    position: absolute;
+    width: 700px;
+    height: 98.3vh;
+    margin-top: -40rem;
+    margin-left: 83%;
+    background: url(../res/geral/astronauta.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.page2 .fundamentos {
+
+    display: flex;
+    margin-left: 35px;
+}
+
+.fundamentos .found {
+    width: 230px;
+    height: 300px;
+    background: #0b1535c2;
+    margin-left: 20px;
+    font-size: 1px;
+    box-shadow: -10px 6px 5px rgba(32, 32, 32, 0.377);
+    border-radius: 5px;
+
+}
+
+/* missao */
+.fundamentos .mission h3 {
+    width: 230px;
+    font-size: 20px;
+    color: white;
+}
+
+.fundamentos .mission p {
+    width: 230px;
+    font-size: 15px;
+    color: white;
+    text-indent: 1em;
+}
+
+.fundamentos .img-mission {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 5px 5px rgba(177, 177, 245, 0.384);
+    margin-top: -80px;
+    margin-left: 40px;
+    background: url('../res/geral/missão.jfif');
+    background-size: cover;
+    border-radius: 100%;
+
+}
+
+/* visão */
+.fundamentos .vision p {
+    width: 230px;
+    font-size: 15px;
+    color: white;
+    text-indent: 1em;
+}
+
+.fundamentos .vision h3 {
+    width: 230px;
+    font-size: 20px;
+    color: white;
+}
+
+.fundamentos .img-vision {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 5px 5px rgba(177, 177, 245, 0.384);
+    margin-top: -80px;
+    margin-left: 40px;
+    background: url(../res/geral/vision.png);
+    background-size: cover;
+    border-radius: 100%;
+}
+
+/* valores */
+.fundamentos .values p {
+    width: 230px;
+    font-size: 15px;
+    color: white;
+}
+
+.fundamentos .values h3 {
+    width: 230px;
+    font-size: 20px;
+    color: white;
+}
+
+.fundamentos .img-values {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 5px 5px rgba(177, 177, 245, 0.384);
+    margin-top: -80px;
+    margin-left: 40px;
+    background: url(../res/geral/valores.webp);
+    background-size: cover;
+    border-radius: 100%;
+}
+
+/* paixão */
+.fundamentos .paixao p {
+    width: 230px;
+    font-size: 15px;
+    color: white;
+    text-indent: 1em;
+}
+
+.fundamentos .img-paixao {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 5px 5px rgba(177, 177, 245, 0.384);
+    margin-top: -80px;
+    margin-left: 40px;
+    background: url(../res/geral/paixao.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.fundamentos .paixao h3 {
+    width: 230px;
+    font-size: 20px;
+    color: white;
+}
+
+/* razão */
+.fundamentos .razao p {
+    width: 230px;
+    font-size: 15px;
+    color: white;
+    text-indent: 1em;
+}
+
+.fundamentos .img-razao {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 5px 5px rgba(177, 177, 245, 0.384);
+    margin-top: -80px;
+    margin-left: 40px;
+    background: url(../res/geral/razao.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.fundamentos .razao h3 {
+    width: 230px;
+    font-size: 20px;
+    color: white;
+}
+
+/* proposito */
+.fundamentos .proposito p {
+    width: 230px;
+    font-size: 15px;
+    color: white;
+    text-indent: 1em;
+}
+
+.fundamentos .img-proposito {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 5px 5px rgba(177, 177, 245, 0.384);
+    margin-top: -80px;
+    margin-left: 40px;
+    background: url(../res/geral/proposito.jfif);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.fundamentos .proposito h3 {
+    width: 230px;
+    font-size: 20px;
+    color: white;
+}
+
+/* Definições pagina 3 */
+.page3 {
+    display: non
+}
+
+
+
+/* ocultando todas as paginas, organização */
+.page5,
+.page6,
+.page7,
+.page8,
+.page9,
+.page10,
+.page11,
+.page12,
+.page13,
+.page14 {
+    display: none;
+}
+
+/* texto para o video::after
+Digite, cole e edite texto aqui.
+
+O Natural Reader é um programa profissional de conversão de texto em fala que converte qualquer texto escrito em palavras faladas.
+
+Natural Reader suporta mais de 20 formatos de documentos, incluindo PDF, doc & docx, e-books e até mesmo imagens. Você pode voltar para a página da biblioteca para adicionar novos arquivos.
+
+Temos assinaturas gratuitas e pagas de nossas aplicações para atender às necessidades de diferentes usuários em diferentes orçamentos. Nossa assinatura Plus inclui recursos exclusivos e o uso das vozes Plus, nossas vozes mais novas e mais avançadas. As Vozes Plus permitem que o texto fluido e de som natural seja capaz de falar de acordo com os padrões e entonação das vozes humanas.
+
+Os usuários gratuitos podem experimentar as vozes Premium por 20 minutos por dia e as vozes Plus por 5 minutos por dia. Ou usar quaisquer vozes gratuitas disponíveis de forma ilimitada.
+
+Se você estiver interessado em usar nossas vozes para uso não pessoal, como para vídeos do Youtube, e-Learning, ou outros fins comerciais ou públicos, por favor, confira nossa aplicação Web Comercial Natural Reader.
+
+Você também pode ouvir e ir com nosso aplicativo móvel. Ao usar a câmera móvel, você pode até mesmo usar nosso aplicativo para ouvir livros e anotações físicas.
+*/
+
+/* meu video para a apresentação
+https://www.renderforest.com/pt/project/78607525/edit
+*/
