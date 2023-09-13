@@ -294,9 +294,110 @@ body {
 }
 
 /* Definições pagina 3 */
+/* Estilize a classe .page3 para que ocupe toda a seção */
 .page3 {
-    display: non
+    display: flex;
+    justify-content: center;
+    background-color: black;
 }
+ .page3 .titulo{
+    position: absolute;
+    display:none;
+ }
+
+
+/* Estilize a classe .video para que o vídeo ocupe toda a largura da seção */
+.video {
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilize o elemento de vídeo para que ele ocupe toda a largura da seção */
+.video video {
+    width: 85vw;
+    height: 95vh;
+    margin-top: 0.2rem;
+    object-fit: cover; /* Isso faz com que o vídeo ocupe todo o espaço disponível sem distorcer */
+}
+
+
+
+/*Definição da pagina 4*/
+.page4{
+    background: url(../res/swot/sowt.jpeg)50%;
+    background-repeat: no-repeat;
+    background-size: 98vw 95vh;
+    background-position: center;
+}
+
+
+.page4 .titulo{
+    color:white;
+    font-size:36px;
+    margin-left: 40px;
+
+}
+
+
+.matriz-swot h3{
+    margin-left:25px;
+}
+
+
+.matriz-swot {
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: rgb(17, 17, 17);
+    font-weight: bold;
+    font-size:25px;
+    z-index: 1;
+    justify-content: center;
+    margin-left: 150px;
+    Margin-top:50px;
+   
+}
+
+
+.matriz-swot ul{
+    list-style: none;
+    line-height: 35px;
+    text-shadow: -10px 5px 5px rgba(255, 255, 255, 0.603);
+}
+
+
+.matriz-swot .baixo{
+    margin-top:10rem;
+    
+}
+
+
+.matriz-swot .cima{
+    margin-top:-20px;
+    
+}
+
+
+.matriz-swot .left{
+    margin-left: 4rem;
+}
+
+
+.matriz-swot .right{
+    margin-left: 10rem;
+}
+
+
+
+.forcas, .fraquezas, .oportunidades, .ameacas{
+    width:600px;
+    background-color: rgba(204, 226, 226, 0.473);
+    border-radius: 5px;
+    
+}
+
+
+
 
 
 
@@ -314,22 +415,3 @@ body {
     display: none;
 }
 
-/* texto para o video::after
-Digite, cole e edite texto aqui.
-
-O Natural Reader é um programa profissional de conversão de texto em fala que converte qualquer texto escrito em palavras faladas.
-
-Natural Reader suporta mais de 20 formatos de documentos, incluindo PDF, doc & docx, e-books e até mesmo imagens. Você pode voltar para a página da biblioteca para adicionar novos arquivos.
-
-Temos assinaturas gratuitas e pagas de nossas aplicações para atender às necessidades de diferentes usuários em diferentes orçamentos. Nossa assinatura Plus inclui recursos exclusivos e o uso das vozes Plus, nossas vozes mais novas e mais avançadas. As Vozes Plus permitem que o texto fluido e de som natural seja capaz de falar de acordo com os padrões e entonação das vozes humanas.
-
-Os usuários gratuitos podem experimentar as vozes Premium por 20 minutos por dia e as vozes Plus por 5 minutos por dia. Ou usar quaisquer vozes gratuitas disponíveis de forma ilimitada.
-
-Se você estiver interessado em usar nossas vozes para uso não pessoal, como para vídeos do Youtube, e-Learning, ou outros fins comerciais ou públicos, por favor, confira nossa aplicação Web Comercial Natural Reader.
-
-Você também pode ouvir e ir com nosso aplicativo móvel. Ao usar a câmera móvel, você pode até mesmo usar nosso aplicativo para ouvir livros e anotações físicas.
-*/
-
-/* meu video para a apresentação
-https://www.renderforest.com/pt/project/78607525/edit
-*/
