@@ -20,12 +20,13 @@ body {
 
 .container section {
     border: 1px solid green;
-    margin-bottom: 50px;
-    width: 100vw;
-    /* Define a largura igual à largura da viewport */
+    margin-bottom: 25px;
+    width: 98vw;
+   
     height: 95vh;
-    /* Define a altura igual à altura da viewport */
+   
     flex-shrink: 0;
+   
 
 }
 
@@ -74,13 +75,14 @@ body {
     display: flex;
     overflow: hidden;
     background-color: rgba(193, 193, 219, 0.432);
+    flex-shrink: 0;
 
 }
 
 .page2 .sobre {
     position: absolute;
     margin-left: 5%;
-    margin-top: 2%;
+    margin-top: -2%;
 }
 
 .page2 .sobre h1 {
@@ -114,19 +116,21 @@ body {
     position: absolute;
     width: 700px;
     height: 98.3vh;
-    margin-top: -40rem;
-    margin-left: 83%;
+    margin-top: -35rem;
+    margin-left: 61rem;
     background: url(../res/geral/astronauta.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     z-index: -1;
+    flex-shrink: 0;
 }
 
 .page2 .fundamentos {
-
+    position: absolute;
     display: flex;
-    margin-left: 35px;
+    margin-left: 7rem;
+    flex-shrink: 0;
 }
 
 .fundamentos .found {
@@ -161,6 +165,7 @@ body {
     margin-top: -80px;
     margin-left: 40px;
     background: url('../res/geral/missão.jfif');
+    opacity: 0.9;
     background-size: cover;
     border-radius: 100%;
 
@@ -187,6 +192,7 @@ body {
     margin-top: -80px;
     margin-left: 40px;
     background: url(../res/geral/vision.png);
+    opacity: 0.9;
     background-size: cover;
     border-radius: 100%;
 }
@@ -211,6 +217,7 @@ body {
     margin-top: -80px;
     margin-left: 40px;
     background: url(../res/geral/valores.webp);
+    opacity: 0.9;
     background-size: cover;
     border-radius: 100%;
 }
@@ -230,6 +237,7 @@ body {
     margin-top: -80px;
     margin-left: 40px;
     background: url(../res/geral/paixao.jpg);
+    opacity: 0.9;
     background-position: center;
     background-size: cover;
     border-radius: 100%;
@@ -255,6 +263,7 @@ body {
     box-shadow: 0 5px 5px rgba(177, 177, 245, 0.384);
     margin-top: -80px;
     margin-left: 40px;
+    opacity: 0.9;
     background: url(../res/geral/razao.webp);
     background-position: center;
     background-size: cover;
@@ -282,6 +291,7 @@ body {
     margin-top: -80px;
     margin-left: 40px;
     background: url(../res/geral/proposito.jfif);
+    opacity: 0.9;
     background-position: center;
     background-size: cover;
     border-radius: 100%;
@@ -300,11 +310,11 @@ body {
     justify-content: center;
     background-color: black;
 }
- .page3 .titulo{
-    position: absolute;
-    display:none;
- }
 
+.page3 .titulo {
+    position: absolute;
+    display: none;
+}
 
 /* Estilize a classe .video para que o vídeo ocupe toda a largura da seção */
 .video {
@@ -317,13 +327,12 @@ body {
     width: 85vw;
     height: 95vh;
     margin-top: 0.2rem;
-    object-fit: cover; /* Isso faz com que o vídeo ocupe todo o espaço disponível sem distorcer */
+    object-fit: cover;
+    /* Isso faz com que o vídeo ocupe todo o espaço disponível sem distorcer */
 }
 
-
-
 /*Definição da pagina 4*/
-.page4{
+.page4 {
     background: url(../res/swot/sowt.jpeg)50%;
     background-repeat: no-repeat;
     background-size: 98vw 95vh;
@@ -331,87 +340,772 @@ body {
 }
 
 
-.page4 .titulo{
-    color:white;
-    font-size:36px;
+.page4 .titulo {
+    color: white;
+    font-size: 36px;
     margin-left: 40px;
+    margin-top: -50px;
 
 }
 
 
-.matriz-swot h3{
-    margin-left:25px;
+.matriz-swot h3 {
+    margin-left: 25px;
+    display: none;
 }
 
 
 .matriz-swot {
-   
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: rgb(17, 17, 17);
     font-weight: bold;
-    font-size:25px;
+    font-size: 25px;
     z-index: 1;
     justify-content: center;
     margin-left: 150px;
-    Margin-top:50px;
-   
+    Margin-top: 50px;
+
 }
 
 
-.matriz-swot ul{
+.matriz-swot ul {
     list-style: none;
     line-height: 35px;
     text-shadow: -10px 5px 5px rgba(255, 255, 255, 0.603);
 }
 
+.matriz-swot li {
+    background-color: rgba(204, 233, 223, 0.808);
+    margin-top: 25px;
+    text-align: center;
+    border-radius: 7px;
+}
 
-.matriz-swot .baixo{
-    margin-top:10rem;
-    
+.matriz-swot .baixo {
+    margin-top: 5rem;
+
+}
+
+.matriz-swot .cima {
+    margin-top: -5rem;
 }
 
 
-.matriz-swot .cima{
-    margin-top:-20px;
-    
+.matriz-swot .left {
+    margin-left: -2rem;
 }
 
 
-.matriz-swot .left{
-    margin-left: 4rem;
-}
-
-
-.matriz-swot .right{
+.matriz-swot .right {
     margin-left: 10rem;
 }
 
 
 
-.forcas, .fraquezas, .oportunidades, .ameacas{
-    width:600px;
-    background-color: rgba(204, 226, 226, 0.473);
+.forcas,
+.fraquezas,
+.oportunidades,
+.ameacas {
+    width: 600px;
     border-radius: 5px;
+    margin-top: -40px;
+
+}
+
+
+/* Definições da pagina 5 */
+
+.page5 {
+    background: url(../res/geral/incentivo.jpg), lightgray 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-shrink: 0;
+
+}
+
+.leis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+.lei h1 {
+
+    color: white;
+    font-size: 50px;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.432);
+}
+
+.leis h3 {
+    width: 80rem;
+    ;
+    text-align: center;
+    color: rgba(248, 243, 243, 0.914);
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.432);
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.356);
+    border-radius: 7px;
+}
+
+
+/*definições pagina 6*/
+.page6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(../res/empresas/tc-human.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.page6 .report1 {
+    margin-top: 50px;
+    margin-left: 10%;
+    width: 800px;
+    height: 300px;
+    background: url(../res/whi/noticia-incentivo.png), lightgray 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-shrink: 0;
+}
+
+.page6 .report2 {
+    width: 572px;
+    height: 366px;
+    margin-left: 25px;
+    background: url(../res/whi/noticia-arcelor.png), lightgray 50% / cover no-repeat;
+    flex-shrink: 0;
+}
+
+.page6 .report3 {
+    width: 698px;
+    height: 276px;
+    border-radius: 15px;
+    background: url(../res/whi/noticia-incentivo1.png), lightgray 50% / cover no-repeat;
+    flex-shrink: 0;
+}
+
+
+.page6 .titulo h1 {
+    width: 950px;
+    height: 75px;
+    flex-shrink: 0;
+    color: #fffbfb;
+    font-family: Post No Bills Colombo ExtraBold;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+
+
+
+/*Definições pagina 7*/
+.page7 {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background: url(/res/geral/organograma.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+.page7 .corpo-setor {
+    width: 600px;
+    height: 500px;
+    color: white;
+    font-size: 30px;
+    margin-left: 10px;
+    border: 1px solid rgba(0, 0, 255, 0);
+    text-align: justify;
+    background-color: rgba(89, 90, 90, 0.877);
+
+}
+
+.page7 .titulo-setor {
+    color: white;
+    margin-top: 150px;
+    margin-left: 10px;
+    /* border: 1px solid blue; */
+    border-bottom: 2px solid white;
+    text-align: center;
+    background-color: rgba(109, 103, 83, 0.973);
+}
+
+.corpo-setor h3 {
+    width: 90%;
+    margin-left: 15px;
+}
+
+.corpo-setor h3:hover {
+    width: 90%;
+    margin-left: 15px;
+    background-color: rgba(109, 103, 83, 0.973);
+}
+
+.page7 h1 {
+    font-size: 36px;
+}
+
+
+/*Definições pagina 8*/
+.page8 {
+    display: flex;
+    flex-direction: row;
+    background: url(../res/geral/uviverse.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+
+.page8 .gov {
+    width: 600px;
+    height: 800px;
+    border-radius: 15px;
+    background: #1b2838e3;
+    flex-shrink: 0;
+    margin-right: 5px;
+    margin-left: 14rem;
+    margin-top: 30px;
+}
+
+.page8 h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.page8 h4 {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.gov .equipe .pessoal {
+    display: flex;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.equipe .user {
+    width: 50px;
+    height: 50px;
+    background: url(../res/governança/user-default.png), rgba(211, 211, 211, 0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-shrink: 0;
+    margin-top: 10px;
+    margin-left: 10%;
+    z-index: 0;
+}
+
+.equipe .pessoal .funcao {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.pessoal .funcao span {
+
+    padding-left: 90px;
+    padding-right: 0;
+    padding-bottom: 10px;
+    margin-left: -80px;
+    font-size: 27px;
+    color: rgb(213, 202, 131);
+    z-index: 1;
+}
+
+.page8 .funcao p {
+    font-size: 22px;
+    margin-left: 1rem;
+}
+
+.gov .gestor {
+    color: white;
+}
+
+
+.page8 .Oscar {
+    display: flex;
+}
+
+.page8 .oscar .user {
+    width: 100px;
+    height: 100px;
+    background: url(../res/governança/user-default.png), lightgray 50% / cover no-repeat;
+    flex-shrink: 0;
+}
+
+
+
+/* definições da pagina 9 */
+
+.page9 {
+    display: flex;
+    background: url(../res/metas/fundoprojeção.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+   
+}
+
+
+
+.page9 .time {
+    width: 500px;
+    height: 600px;
+    margin-top: 5%;
+    margin-left: 3%;
+    border-radius: 15px;
+    background-color:rgba(0, 0, 0, 0.568);
+    flex-shrink: 0;
+    color: white;
+}
+
+.page9 .time .titulo {
+    width: 250px;
+    border-radius: 5px;
+    background-color: #FB9804;
+    flex-shrink: 0;
+    margin-left: 25%;
+    margin-bottom: 100px;
+    text-align: center;
     
 }
 
+.time .titulo h1 {
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.page9 .projetos {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+    margin-left: 50px;
+
+}
+
+.page9 .projetos {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+    margin-left: 50px;
+
+}
+
+
+/*ano 1*/
+.ano1 .projetos .imagem1 {
+    width: 60px;
+    height: 60px;
+    background: url(../res/metas/quedazero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.ano1 .projetos .imagem2 {
+    width: 60px;
+    height: 60px;
+    background: url(../res/metas/sdo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.ano1 .projetos .imagem3 {
+    width: 60px;
+    height: 60px;
+    background: url(../res/metas/equipe-agil.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+
+/*ano 2*/
+.ano2 .projetos .imagem1 {
+    width: 60px;
+    height: 60px;
+    background: url(../res/metas/espaço.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.ano2 .projetos .imagem2 {
+    width: 60px;
+    height: 60px;
+    background: url(../res/metas/sds.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.ano2 .projetos .imagem3 {
+    width: 60px;
+    height: 60px;
+    background: url(../res/metas/pulse.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+
+/*ano 3*/
+.ano3 .projetos .imagem1 {
+    width: 60px;
+    height: 60px;
+    background: url(../res/metas/software-propietario.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.ano3 .projetos .imagem2 {
+    width: 60px;
+    height: 60px;
+    background: url(../res/metas/expand.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.ano3 .projetos .imagem3 {
+    width: 60px;
+    height: 60px;
+    background: url(../res/metas/plataforma-cursos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+
+.projetos {
+
+    margin-top: 100px;
+}
+
+.projetos .descricao {
+    margin-left: 20px;
+    margin-top: 10px;
+}
 
 
 
+/* descrição da pagina 10 */
+.page10{
+    background: url(../res/layout/fundo_espaço.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+ 
+}
+
+
+
+
+.page10 .titulo {
+    width: 700px;
+    height: 69px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Post No Bills Jaffna ExtraBold;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+}
+
+
+
+.page10 .locais {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+.page10 .space {
+    width: 400px;
+    height: 300px;
+    margin-top: 1rem;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.568);
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.30);
+    background: #ffffff6b;
+    flex-shrink: 0;
+}
+
+
+/*local 1*/
+.page10 .sala1 .local {
+    width: 324px;
+    height: 200px;
+    border-radius: 10px;
+    background: url(../res/espacos/pesquisa-inovação.jpg), lightgray 50%;
+    background-size: cover;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.page10 .sala1 .local:hover {
+    width: 324px;
+    height: 200px;
+    border-radius: 10px;
+    background: url(../res/layout/pesquisa.png), lightgray 50% / no-repeat;
+    background-position: 50%;
+    background-size: 35dvb;
+    flex-shrink: 0;
+}
+
+/*local 2*/
+.page10 .sala2 .local {
+    width: 324px;
+    height: 200px;
+    border-radius: 10px;
+    background: url(../res/espacos/sala-colaborativa-de-soft.jpg), lightgray 50%;
+    background-size: cover;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.page10 .sala2 .local:hover {
+    width: 324px;
+    height: 200px;
+    border-radius: 10px;
+    background-position: 50%;
+    background-size: 35dvb;
+    flex-shrink: 0;
+}
+
+/*local 3*/
+.page10 .sala3 .local {
+    width: 324px;
+    height: 200px;
+    border-radius: 10px;
+    background: url(../res/espacos/focus.jpg), lightgray 50%;
+    background-size: cover;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.page10 .sala3 .local:hover {
+    width: 324px;
+    height: 200px;
+    border-radius: 10px;
+    background-position: 50%;
+    background-size: 35dvb;
+    flex-shrink: 0;
+}
+
+
+/*local 4*/
+.page10 .sala4 .local {
+    width: 324px;
+    height: 200px;
+    border-radius: 10px;
+    background: url(../res/espacos/descanso.jpeg), lightgray 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.page10 .sala4 .local:hover {
+    width: 324px;
+    height: 200px;
+    border-radius: 10px;
+    background-position: 50%;
+    background-size: 35dvb;
+    flex-shrink: 0;
+}
+
+
+/*local 5*/
+.page10 .sala5 .local {
+    width: 324px;
+    height: 200px;
+    border-radius: 10px;
+    background: url(../res/espacos/dikma-tec.jpg), lightgray 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.page10 .sala5 .local:hover {
+    width: 324px;
+    height: 200px;
+    border-radius: 10px;
+
+    background-position: 50%;
+    background-size: 35dvb;
+    flex-shrink: 0;
+}
+
+
+/*local 6*/
+.page10 .sala6 .local {
+    width: 324px;
+    height: 200px;
+    border-radius: 10px;
+    background: url(../res/espacos/design-thinking.jpg), lightgray 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.page10 .sala6 .local:hover {
+    width: 324px;
+    height: 200px;
+    border-radius: 10px;
+
+    background-position: 50%;
+    background-size: 200%;
+    flex-shrink: 0;
+}
+
+
+.page10 .local {
+    margin-left: 11%;
+    margin-top: 10%;
+}
+
+.page10 .space .nome {
+    width: 379px;
+    height: 50px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Post No Bills Colombo ExtraBold;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+}
+
+
+.page10 .exibir {
+    display: none;
+    position: absolute;
+    background-color: rgba(123, 134, 187, 0.871);
+    margin-left: 0.1rem;
+    width: 98vw;
+    height: 95vh;
+}
+
+
+.exibir h5 {
+    width: 20px;
+    font-size: 25px;
+    margin-left:20px;
+    color:red;
+    font-weight: 900;
+    background-color: rgba(255, 255, 255, 0.055);
+    cursor: pointer;
+}
+
+.exibir .imagem {
+    width: 800px;
+    height: 600px;
+    margin-left: 25%;
+
+}
+
+
+/* Definições pagina 12 */
+
+.page12{
+    background: url(../res/geral/question.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.page12 .titulo {
+    color: white;
+    font-size: 36px;
+}
+
+.page12 .box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top:7rem;
+    margin-left: 8rem;
+}
+
+.page12 .box h3 {
+    width: 600px;
+    height: 100px;
+    border-radius: 15px;
+    background: #FFF;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Segoe UI Variable;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 85px;
+    text-align: center;
+
+}
+
+.page13 {
+
+
+}
+
+.page13 img{
+   
+}
+
+.page13 .image {
+    height:400px;
+    border: 1px solid red;
+    margin-top: 10rem;
+    overflow-x: scroll;
+    overflow-y: scroll;
+
+
+}
 
 
 /* ocultando todas as paginas, organização */
-.page5,
-.page6,
-.page7,
-.page8,
-.page9,
-.page10,
-.page11,
-.page12,
-.page13,
+
 .page14 {
     display: none;
 }
-

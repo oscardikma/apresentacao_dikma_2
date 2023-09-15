@@ -367,7 +367,6 @@ html {
 .setor2,
 .setor3 {
     margin-top: 20px;
-
 }
 
 .page4 .setor1 {
@@ -1164,12 +1163,12 @@ html {
 .decision {
     width: 100%;
     height: 150px;
-
     border: 1px solid #000000;
 
 }
 
 .decision .image {
+    position: absolute;
     width: 100%;
     height: 50%;
     border: 1px solid red;
