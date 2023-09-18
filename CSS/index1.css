@@ -1206,8 +1206,8 @@ body {
 }
 
 .page14 .nowast:hover {
-    width: 536px;
-    height: 500px;
+    width: 546px;
+    height: 510px;
     border-radius: 15px;
     background: url(../res/geral/queda.png), lightgray 50% / cover no-repeat;
     background-position: center;
@@ -1237,19 +1237,41 @@ body {
 .page14 .pulse {
     width: 536px;
     height: 500px;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 15px;
     background: url(../res/geral/pulse.png);
     background-position: center;
     flex-shrink: 0;
 }
 
+
 .page14 .pulse:hover {
-    width: 536px;
-    height: 500px;
+    width: 546px;
+    height: 510px;
     border-radius: 15px 0px 0px 15px;
     background: url(../res/geral/pulse.png),lightgray 50% / cover no-repeat;
     background-position: center;
     background-size: 102%;
+    flex-shrink: 0;
+}
+
+
+.page14 .gnt {
+    width: 536px;
+    height: 500px;
+    border-radius: 15px 0px 0px 15px;
+    background: url(../res/geral/pulse.png);
+    background-position: center;
+    background-size: 102%;
+    flex-shrink: 0;
+}
+
+
+.page14 .gnt:hover {
+    width: 546px;
+    height: 510px;
+    border-radius: 15px;
+    background: url(../res/geral/pulse.png),lightgray 50% / cover no-repeat;
+    background-position: 102%;
     flex-shrink: 0;
 }
 
