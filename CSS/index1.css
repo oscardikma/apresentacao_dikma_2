@@ -1179,7 +1179,106 @@ body {
 } 
 
 
-
 .page14 {
-    display: none;
+    display: flex;
+    justify-content: center;
+    background: #a6d3f1;
+}
+
+.page14 .produto {
+    margin-top: 100px;
+    width: 536px;
+    height: 500px;
+    border-radius: 15px 0px 0px 15px;
+    margin-left: 2rem;
+    text-align: center;
+    flex-shrink: 0;
+    border: 1px solid white;
+}
+
+.page14 .nowast {
+    width: 536px;
+    height:500px;
+    border-radius: 15px;
+    background: url(../res/geral/queda.png);
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.page14 .nowast:hover {
+    width: 536px;
+    height: 500px;
+    border-radius: 15px;
+    background: url(../res/geral/queda.png), lightgray 50% / cover no-repeat;
+    background-position: center;
+    background-size: 102%;
+    flex-shrink: 0;
+}
+
+.page14 .sdo {
+    width: 536px;
+    height: 500px;
+    border-radius: 15px 0px 0px 15px;
+    background: url(../res/geral/sdo.png);
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.page14 .sdo:hover {
+    width: 536px;
+    height: 500px;
+    border-radius: 15px 0px 0px 15px;
+    background: url(../res/geral/sdo.png), lightgray 50% / cover no-repeat;
+    background-position:center;
+    background-size: 102%;
+    flex-shrink: 0;
+}
+
+.page14 .pulse {
+    width: 536px;
+    height: 500px;
+    border-radius: 15px 0px 0px 15px;
+    background: url(../res/geral/pulse.png);
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.page14 .pulse:hover {
+    width: 536px;
+    height: 500px;
+    border-radius: 15px 0px 0px 15px;
+    background: url(../res/geral/pulse.png),lightgray 50% / cover no-repeat;
+    background-position: center;
+    background-size: 102%;
+    flex-shrink: 0;
+}
+
+.page14 .titulo {
+
+    width: 517px;
+    height: 71px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Post No Bills Colombo ExtraBold;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+    margin-top: 25%;
+}
+
+.page14 .titulo a {
+    width: 517px;
+    height: 71px;
+    text-decoration: none;
+    flex-shrink: 0;
+    color: #000000;
+    font-family: Post No Bills Colombo ExtraBold;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+    margin-top: 120%;
 }
