@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     overflow-y: hidden;
 }
 
@@ -26,6 +26,7 @@ body {
     height: 95vh;
     flex-shrink: 0;
     padding-top: 80px;
+    overflow-x: scroll;
 
 
 }
@@ -42,7 +43,7 @@ body {
     background-repeat: no-repeat;
     background-size: 98vw 95vh;
     background-position: center;
-  
+
 }
 
 .page1 .titulo h1 {
@@ -62,7 +63,6 @@ body {
     height: 600px;
     margin-left: 150px;
     margin-top: 70px;
-
     background: url(../res/geral/icone.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -451,6 +451,7 @@ body {
     background-color: rgba(0, 0, 0, 0.356);
     border-radius: 7px;
 }
+
 .leis h3:hover {
     width: 80rem;
     text-align: center;
@@ -461,13 +462,13 @@ body {
     border-radius: 7px;
 }
 
-.leis a{
-    color:white;
+.leis a {
+    color: white;
     text-decoration: none;
 }
 
-.leis a:hover{
-    color:rgb(253, 238, 238);
+.leis a:hover {
+    color: rgb(253, 238, 238);
     font-size: 32px;
     text-decoration: none;
 }
@@ -1111,24 +1112,67 @@ body {
 
 /*definições pagina 13*/
 
-.page13 .estrutura{
-    border:1px solid black;
+.page13{
+    overflow-x: scroll;
+}
+.page13 .titulo{
+    margin-top:-10px;
 }
 
-.page13 .semestres .semestre, .acumulado {
-    display:flex;
+
+.cuerpo{
+display: flex;
+overflow-x: scroll;
+}
+.col {
+    border-right:2px solid rgba(123, 120, 120, 0.639);
+    width:250px;
+}
+
+.col ul li{
+    font-size:20px;
+    margin-bottom: 30px;
+    list-style: none;
+    
+
+}
+
+.cuerpo .c1{
+  margin-right: 1rem;
+ 
+}
+
+.cuerpo .c2{
+ 
+}
+
+.cuerpo .c3{
     
 }
 
-.page13 .semestres .semestre li, .acumulado li{
-    margin-left: 50px;
+.cuerpo .col .hd{
+    background-color: #FB9804;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+    width: 150px;
+    cursor:pointer;
+}
+
+.page13 .intro{
+    display:flex;
+}
+
+.page13 .intro ul li{
+    font-size: 20px;
     list-style: none;
 }
 
-.page13 .semestres .acumulado .title{
-    font-weight: bold;
-    font-size:20px;
-}
+
+
+
+
+
 
 
 /* ocultando todas as paginas, organização */
@@ -1141,42 +1185,44 @@ body {
     -ms-flex-align: center;
     position: fixed;
     top: -15px;
-    left:17px;
+    left: 17px;
     text-align: center;
     align-items: center;
-    border:1px solid red;
+    border: 1px solid red;
     background-color: #050505;
 
 }
 
 .box-menu li {
-    margin-top:1px;
+    margin-top: 1px;
     font-size: 19px;
-    padding:10px 30px 10px 30px;
-    list-style-type: none;
-}
-.box-menu li:hover {
-    margin-top:1px;
-    background-color: #302f2f;
-    padding:10px 30px 10px 30px;
+    padding: 10px 30px 10px 30px;
     list-style-type: none;
 }
 
-.box-menu li a{
-    color:rgb(199, 195, 195);
+.box-menu li:hover {
+    margin-top: 1px;
+    background-color: #302f2f;
+    padding: 10px 30px 10px 30px;
+    list-style-type: none;
+}
+
+.box-menu li a {
+    color: rgb(199, 195, 195);
     font-size: 18px;
     text-decoration: none;
 }
-.box-menu li a:hover{
-    color:white;
+
+.box-menu li a:hover {
+    color: white;
     font-size: 19px;
     text-decoration: none;
 }
 
 
-.box-menu li:not(.first){
-    border-left:1px solid rgb(255, 255, 255);
-} 
+.box-menu li:not(.first) {
+    border-left: 1px solid rgb(255, 255, 255);
+}
 
 
 .page14 {
@@ -1197,8 +1243,8 @@ body {
 }
 
 .page14 .nowast {
-    width: 536px;
-    height:500px;
+    width: 436px;
+    height: 400px;
     border-radius: 15px;
     background: url(../res/geral/queda.png);
     background-position: center;
@@ -1208,6 +1254,7 @@ body {
 .page14 .nowast:hover {
     width: 546px;
     height: 510px;
+    margin-top: 50px;
     border-radius: 15px;
     background: url(../res/geral/queda.png), lightgray 50% / cover no-repeat;
     background-position: center;
@@ -1216,8 +1263,8 @@ body {
 }
 
 .page14 .sdo {
-    width: 536px;
-    height: 500px;
+    width: 436px;
+    height: 400px;
     border-radius: 15px 0px 0px 15px;
     background: url(../res/geral/sdo.png);
     background-position: center;
@@ -1227,16 +1274,17 @@ body {
 .page14 .sdo:hover {
     width: 536px;
     height: 500px;
+    margin-top: 50px;
     border-radius: 15px 0px 0px 15px;
     background: url(../res/geral/sdo.png), lightgray 50% / cover no-repeat;
-    background-position:center;
+    background-position: center;
     background-size: 102%;
     flex-shrink: 0;
 }
 
 .page14 .pulse {
-    width: 536px;
-    height: 500px;
+    width: 436px;
+    height: 400px;
     border-radius: 15px;
     background: url(../res/geral/pulse.png);
     background-position: center;
@@ -1247,8 +1295,9 @@ body {
 .page14 .pulse:hover {
     width: 546px;
     height: 510px;
+    margin-top: 50px;
     border-radius: 15px 0px 0px 15px;
-    background: url(../res/geral/pulse.png),lightgray 50% / cover no-repeat;
+    background: url(../res/geral/pulse.png), lightgray 50% / cover no-repeat;
     background-position: center;
     background-size: 102%;
     flex-shrink: 0;
@@ -1256,8 +1305,8 @@ body {
 
 
 .page14 .gnt {
-    width: 536px;
-    height: 500px;
+    width: 436px;
+    height: 400px;
     border-radius: 15px 0px 0px 15px;
     background: url(../res/geral/pulse.png);
     background-position: center;
@@ -1269,8 +1318,9 @@ body {
 .page14 .gnt:hover {
     width: 546px;
     height: 510px;
+    margin-top: 50px;
     border-radius: 15px;
-    background: url(../res/geral/pulse.png),lightgray 50% / cover no-repeat;
+    background: url(../res/geral/pulse.png), lightgray 50% / cover no-repeat;
     background-position: 102%;
     flex-shrink: 0;
 }
@@ -1282,7 +1332,6 @@ body {
     flex-shrink: 0;
     color: #000;
     font-family: Post No Bills Colombo ExtraBold;
-    font-size: 100px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
@@ -1297,7 +1346,7 @@ body {
     flex-shrink: 0;
     color: #000000;
     font-family: Post No Bills Colombo ExtraBold;
-    font-size: 100px;
+    font-size: 80px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
